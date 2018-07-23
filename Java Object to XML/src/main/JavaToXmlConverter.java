@@ -38,11 +38,10 @@ public class JavaToXmlConverter {
 			
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			Student stu =(Student)unmarshaller.unmarshal(new File("/Users/atulyadav/JavaProjects/Student2.xml"));
-			System.out.println(stu);
 			System.out.println("Reverse of this -> Student to XML done!!!");
+			System.out.println(stu);
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		
